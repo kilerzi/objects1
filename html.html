@@ -3,9 +3,67 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Advanced Filtering</title>
   </head>
   <body>
-    <script src="objects.js"></script>
+    <script defer src="objects.js"></script>
+    <h2>Filter Cars</h2>
+
+    <label for="typeFilter">Type:</label>
+    <select id="typeFilter">
+      <option value="">All</option>
+    </select>
+    <br />
+    <label for="brandFilter">Brand:</label>
+    <select id="brandFilter">
+      <option value="">All</option>
+    </select>
+    <br />
+    <label for="gasTypeFilter">Gas Type:</label>
+    <select id="gasTypeFilter">
+      <option value="">All</option>
+    </select>
+    <br />
+    <label for="colorFilter">Color:</label>
+    <select id="colorFilter">
+      <option value="">All</option>
+    </select>
+    <br />
+
+    <label for="modelFilter">Model:</label>
+    <input type="text" id="modelFilter" placeholder="Enter model" />
+    <br />
+    <label for="doorsFilter">Doors:</label>
+    <input type="number" id="doorsFilter" min="1" />
+
+    <label>Condition:</label>
+    <input type="radio" name="condition" value="" checked /> All
+    <input type="radio" name="condition" value="true" /> New
+    <input type="radio" name="condition" value="false" /> Old
+    <br />
+
+    <label for="horsepowerFilter">Horsepower:</label>
+    <input type="number" id="horsepowerFilter" placeholder="Min HP" />
+    <input type="number" id="maxHorsepowerFilter" placeholder="Max HP" />
+    <br />
+
+    <button id="searchButton">Search</button>
+    <br />
+
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Brand</th>
+          <th>Model</th>
+          <th>Doors</th>
+          <th>Gas Type</th>
+          <th>Color</th>
+          <th>Condition</th>
+          <th>Horsepower</th>
+        </tr>
+      </thead>
+      <tbody id="outputTable"></tbody>
+    </table>
   </body>
 </html>
