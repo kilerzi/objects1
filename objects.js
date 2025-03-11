@@ -1,5 +1,5 @@
 let url =
-  "https://raw.githubusercontent.com/kilerzi/objects1/dd48ff2bb97063fe33488c178aa2094372999e80/cars.json"; // Replace with actual API URL
+  "https://raw.githubusercontent.com/kilerzi/objects1/dd48ff2bb97063fe33488c178aa2094372999e80/cars.json";
 let allData = [];
 
 //fetcnuvam url
